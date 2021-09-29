@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Therese Hedeblom</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-fixed/">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="scss/therese.css" rel="stylesheet">
+
+
+  </head>
+  <!--navbar med dropdown meny-->
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" aria-label="Tenth navbar example"> <!--navbar med klasser som besämmer position. färg m.m.-->
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="navbar-brand nav-link active" aria-current="page" href="#"><i class="fas fa-home mx-2"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About/about.html">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Showcase/showcase.html">Showcase</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact/contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown"><!---Dropdownmeny-->
+                <a class="nav-link dropdown-toggle" href="Album/album.html" id="dropdown08" data-bs-toggle="dropdown" aria-expanded="false">Media</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown08">
+                  <li><a class="dropdown-item" href="Album/album.html">Album</a></li>
+                  <li><a class="dropdown-item" href="#">Music</a></li>
+                  <li><a class="dropdown-item" href="Video/video.html">Video</a></li>
+                </ul>
+              </li>
+            </ul><!--Dropdownmeny-->
+          </div>
+        </div>
+      </nav>  
+    <!--Navbar med dropdown meny-->
+
+    <!-- Jumbotron, en ihopbyggd jumbotron som tyvärr inte finns i Bootstraps 5,0-->
+      <div class="bg-image p-5 text-center mb-5 mt-5" style="background-image: url('images/header_image2.jpg');">
+        <div class="container-fluid p-5">
+          <h1 class="display-4 title">Therese Hedeblom</h1>
+          <p class="lead selector">Welcome to my webpage</p>
+          <hr class="my-4 d-none d-sm-block d-sm-none d-md-block">
+            <p class="d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block d-sm-none d-md-block d-md-none d-lg-block">Click on link below to get a preview of my album.</p>
+            <div class="d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">
+              <a class="btn btn-light my-2" href="Album/album.html" role="button">Album</a>
+            </div>
+        </div>
+      </div>
+    <!-- Jumbotron -->
+
+    <main class="container mycontainer d-flex"> <!--här används flex-->
+      <div class="row flex-lg-row flex-column flex-sm-column flex-md-column justify-content-evenly"><!--Här ligger klasser som bestämmer i vilken brytpunkt columnerna ska flytta sig-->
+        <div class="col flex-md-column justify-content-sm-start img-fluid">
+          <br>
+          <img class="img-fluid rounded" src="images/piano.jpg" alt="piano"> <!-- bild med rundade hörn-->
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+        <div class="col flex-md-column justify-content-sm-center img-fluid">
+          <br>
+          <img class="img-fluid rounded"  src="images/dog(2).jpg" alt="dog">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+        <div class="col flex-md-column justify-content-sm-end img-fluid">
+          <br>
+          <img class="img-fluid rounded" src="images/pinkfloyd.jpg" alt="pinkfloyd">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+      </div>
+    </main>
+<!--footer som också används flex-->
+    <footer class="myfooter container-fluid d-inline-flex p-5">
+      <div class="row">      
+        <div class="col-md-5"></div><!--Col är columerna som texten ligger i och siffran bestämmer vilken storlek den ska ha-->
+      </div>
+        <div class="col-md-5 order-0 ms-5 text-white pt-4 ps-5">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary" href="#">Cool stuff</a></li>
+            <li><a class="link-secondary" href="#">Random feature</a></li>
+            <li><a class="link-secondary" href="#">Team feature</a></li>
+            <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5 order-1 text-white pt-4 ps-5">
+          <h5 class="">Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary" href="#">Cool stuff</a></li>
+            <li><a class="link-secondary" href="#">Random feature</a></li>
+            <li><a class="link-secondary" href="#">Team feature</a></li>
+            <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+          </ul>
+      </div>
+      <div class="col order-2 text-white pt-4">
+        <h5 class="">Features</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Cool stuff</a></li>
+          <li><a class="link-secondary" href="#">Random feature</a></li>
+          <li><a class="link-secondary" href="#">Team feature</a></li>
+          <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="container-fulid bg-dark d-flex d-flex-row text-center"> <!--en container med ikoner samma bakgrund som footern, gjorde denna lösningen för att få ikonerna centrerade längst ned-->
+      <div class="col mb-3 text-white">
+        <a class="link-secondary" href="#"><i class="fab fa-facebook-square p-2" style="font-size: 2em;"></i></a>
+        <a class="link-secondary" href="#"><i class="fab fa-instagram-square p-2" style="font-size: 2em;"></i></a>
+        <a class="link-secondary" href="#"><i class="fab fa-youtube-square p-2" style="font-size: 2em;"></i></a>
+        <a class="link-secondary" href="#"><i class="fab fa-snapchat-square p-2" style="font-size: 2em;"></i></a>
+      </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.min.js"></script> <!--länk till javascript-->
+      
+  </body>
+</html>

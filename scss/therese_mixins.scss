@@ -1,0 +1,22 @@
+@mixin maskMixin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: $width;
+    height:$width;
+    background-color: rgba(0, 0, 0, 0.60);
+    }
+
+@mixin card_btn {
+    background-color:rgb(114, 88, 100);
+    color: $gray-300;
+    text-shadow: 0px 1px 4px -2px #333;
+    box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.25),
+    0 1px 0 rgba(255, 255, 255, 0.25) inset,
+    0 0 0 rgba(0, 0, 0, 0.5) inset,
+    0 1.25rem 0 rgba(255, 255, 255, 0.08) inset,
+    0 -1.25rem 1.25rem rgba(0, 0, 0, 0.3) inset,
+    0 1.25rem 1.25rem rgba(255, 255, 255, 0.1) inset;
+}
